@@ -44,7 +44,7 @@ export default class Todo extends Component{
     }
 
     handleMarkAsPeding(todo){
-        axios.put(`${URl}/${todo._id}`,{...todo, done:false})
+        axios.put(`${URL}/${todo._id}`,{...todo, done:false})
             .then((res) => this.refresh())
     }
 
