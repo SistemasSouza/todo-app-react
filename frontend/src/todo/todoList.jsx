@@ -10,7 +10,7 @@ export default props => {
                 <td>
                     <IconButton style='success' icon='check' onClick={() => props.handleMarkAsDone(todo)} hide={todo.done}></IconButton>
                     <IconButton style='warning' icon='undo' onClick={() => props.handleMarkAsPeding(todo)} hide={!todo.done}></IconButton>
-                    <IconButton style='danger' icon='trash-o' onClick={()=> props.handleRemove(todo)} hide={!todo.done}></IconButton>
+                    <IconButton style='danger' icon='trash-o' onClick={()=> props.handleRemove(todo)} hide={todo.done}></IconButton>
                 </td>
             </tr>
         ))

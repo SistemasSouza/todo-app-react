@@ -37,6 +37,7 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
+    "react-notifications-component": "^1.0.1",
     "react-router-dom": "^4.3.1"
   }
 }
