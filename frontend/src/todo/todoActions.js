@@ -20,7 +20,7 @@ export const add = description => {
   return dispatch => {
     axios
       .post(URL, { description })
-      .then(res => dispatch({ type: "TODO_ADDED", payload: res.data }))
+      .then(res => dispatch(clear()))
       .then(_ => dispatch(search()))
   }
 }
@@ -45,4 +45,8 @@ export const remove = todo => {
   return dispatch => {
     axios.delete(`${URL}/${todo._id}`).then(res => dispatch(search()))
   }
+}
+
+export const clear = () =>{
+    return {type: 'TODO_CLEAR'}
 }
