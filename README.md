@@ -1,2 +1,2 @@
 # todo-app-react
-Todo List react,aplicativo desenvolvido durante o curso de react udemy
+Todo List react com redux, aplicativo desenvolvido durante o curso de react redux udemy
